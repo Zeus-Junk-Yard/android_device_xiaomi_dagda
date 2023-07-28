@@ -16,4 +16,4 @@ DEVICE_PATH := device/xiaomi/zeus
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
 
 # Screen density
-TARGET_SCREEN_DENSITY := 560
+TARGET_SCREEN_DENSITY := 526
