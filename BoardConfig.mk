@@ -8,9 +8,9 @@
 include device/xiaomi/sm8450-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
-include vendor/xiaomi/dagda/BoardConfigVendor.mk
+include vendor/xiaomi/zeus/BoardConfigVendor.mk
 
-DEVICE_PATH := device/xiaomi/dagda
+DEVICE_PATH := device/xiaomi/zeus
 
 # Kernel
 device_second_stage_modules := \

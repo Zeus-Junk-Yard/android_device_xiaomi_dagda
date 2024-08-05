@@ -4,14 +4,21 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from dagda device
-$(call inherit-product, device/xiaomi/dagda/device.mk)
+# Inherit from zeus device
+$(call inherit-product, device/xiaomi/zeus/device.mk)
 
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_dagda
-PRODUCT_DEVICE := dagda
+# Miui Camera
+$(call inherit-product, device/xiaomi/miuicamera-zeus/device.mk)
+$(call inherit-product, device/xiaomi/miuicamera-zeus/BoardConfig.mk)
+
+# Gapps
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+
+PRODUCT_NAME := lineage_zeus
+PRODUCT_DEVICE := zeus
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := 2201122G
